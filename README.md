@@ -5,6 +5,7 @@ This project implements file compression software integrating Huffman Coding and
 
 Algorithms Used
 1. Huffman Coding
+
 Purpose: Variable-length compression for text data with varying character frequencies.
 Key Steps:
 Build a frequency table for characters.
@@ -28,24 +29,33 @@ Implementation
 Huffman Coding
 Encoding (compression):
 Command to compile and run:
+
 g++ -o huffman_program huffman.cpp encode.cpp decode.cpp -std=c++11
+
 g++ encode.cpp huffman.cpp -o main
+
 ./main inputFile.txt outputFile.txt
 
 Decoding (decompression):
 Command to compile and run:
+
 g++ decode.cpp huffman.cpp -o main
+
 ./main outputFile.txt inputFile.txt
 
 Run-Length Encoding (RLE)
 Encoding:
 Command to compile and run:
+
 g++ encode.cpp -o encode
+
 ./encode inputFile.txt outputFile.txt
 
 Decoding:
 Command to compile and run:
+
 g++ decode.cpp -o decode
+
 ./decode outputFile.txt inputFile.txt
 
 Conclusion
