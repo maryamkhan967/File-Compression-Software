@@ -3,8 +3,7 @@ File Compression Software
 Overview
 This project implements file compression software integrating Huffman Coding and Run-Length Encoding (RLE) to enhance storage and data transmission efficiency. Both algorithms are lossless, reducing resource consumption while maintaining data integrity. The software enables comparative analysis of their performance, efficiency, and suitability for various data types.
 
-Algorithms Used
-1. Huffman Coding
+Huffman Coding
 Purpose: Variable-length compression for text data with varying character frequencies.
 Build a frequency table for characters.
 Construct a binary tree with priority queue-based merging of nodes.
@@ -32,7 +31,7 @@ g++ decode.cpp huffman.cpp -o main
 
 ./main outputFile.txt inputFile.txt
 
-2. Run-Length Encoding (RLE)
+Run-Length Encoding (RLE)
 Purpose: Simplified compression for data with repetitive patterns.
 Encode consecutive characters as the count followed by the character (e.g., AAAABBBCC → 4A3B2C).
 Efficient for images or binary files with repeated data.
